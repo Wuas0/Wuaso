@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from streamlit_folium import st_folium
 import numpy as np
 
 st.set_page_config(page_title="Mapa de Postes Ruta 5 Sur", layout="wide")
@@ -159,4 +158,5 @@ if st.button("Mostrar reportes de postes"):
         st.dataframe(reportes)
     except FileNotFoundError:
         st.info("No hay reportes registrados todavía.")
+
 
