@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import folium
 from streamlit_folium import st_folium
 import numpy as np
 
@@ -160,3 +159,4 @@ if st.button("Mostrar reportes de postes"):
         st.dataframe(reportes)
     except FileNotFoundError:
         st.info("No hay reportes registrados todavía.")
+
